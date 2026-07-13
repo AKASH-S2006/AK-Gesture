@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AK Gesture</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <div class="logo">
+        AK Gesture
+    </div>
+
+    <ul>
+
+        <li><a href="#">Home</a></li>
+
+        <li><a href="#features">Features</a></li>
+
+        <li><a href="#technology">Technology</a></li>
+
+        <li><a href="#about">About</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <h1>AK Gesture</h1>
+
+    <h2>AI Powered Hand Gesture Platform</h2>
+
+    <p>
+
+        Experience real-time hand gesture recognition
+        using Artificial Intelligence,
+        OpenCV and MediaPipe.
+
+    </p>
+
+    <a href="#features" class="button">
+
+        Launch Experience
+
+    </a>
+
+</section>
+
+<!-- ================= FEATURES ================= -->
+
+<section id="features">
+
+<h2 class="section-title">
+
+Features
+
+</h2>
+
+<div class="cards">
+
+<div class="card" data-mode="hand_detection">
+
+<h3>🖐</h3>
+
+<h4>Hand Detection</h4>
+
+<p>Detect hands in real time.</p>
+
+</div>
+
+<div class="card" data-mode="finger_counter">
+
+<h3>✌</h3>
+
+<h4>Finger Counter</h4>
+
+<p>Count raised fingers.</p>
+
+</div>
+
+<div class="card" data-mode="air_canvas">
+
+<h3>🎨</h3>
+
+<h4>Air Canvas</h4>
+
+<p>Draw without touching screen.</p>
+
+</div>
+
+<div class="card" data-mode="virtual_mouse">
+
+<h3>🖱</h3>
+
+<h4>Virtual Mouse</h4>
+
+<p>Control mouse with gestures.</p>
+
+</div>
+
+<div class="card" data-mode="volume_control">
+<h3>🔊</h3>
+
+<h4>Volume Control</h4>
+
+<p>Adjust volume using fingers.</p>
+
+</div>
+
+<div class="card" data-mode="rps">
+
+<h3>🎮</h3>
+
+<h4>Rock Paper Scissors</h4>
+
+<p>Play against AI using gestures.</p>
+
+</div>
+</div>
+
+</section>
+<!-- ================= LIVE DEMO ================= -->
+
+<section id="live-demo">
+
+    <h2 class="section-title">
+        Live Hand Detection
+    </h2>
+
+    <div class="camera-container">
+
+        <img src="{{ url_for('video_feed') }}"
+             id="camera">
+
+    </div>
+
+  
+
+</section>
+
+<!-- ================= TECHNOLOGY ================= -->
+
+<section id="technology">
+
+<h2 class="section-title">
+
+Technology Stack
+
+</h2>
+
+<div class="tech">
+
+<span>Python</span>
+
+<span>Flask</span>
+
+<span>MediaPipe</span>
+
+<span>OpenCV</span>
+
+<span>HTML</span>
+
+<span>CSS</span>
+
+<span>JavaScript</span>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about">
+
+<h2 class="section-title">
+
+About
+
+</h2>
+
+<p class="about">
+
+AK Gesture is an AI powered
+computer vision platform that transforms
+simple hand gestures into real-world applications
+such as games, drawing, virtual mouse,
+gesture control and much more.
+
+</p>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+Developed by
+
+<b>@amskills</b>
+
+<br><br>
+
+Version 1.0
+
+</footer>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
